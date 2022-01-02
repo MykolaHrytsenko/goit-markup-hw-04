@@ -9,6 +9,7 @@
   --link-color: rgba(255, 255, 255, 0.6);
   --border-card-color: #eeeeee;
   --header-border-color: #ececec;
+  --hero-gradient-color: rgba(47, 48, 58, 0.4);
 }
 
 body {
@@ -136,6 +137,19 @@ address {
 
 .hero {
   background-color: var(--first-background-color);
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      var(--hero-gradient-color),
+      var(--hero-gradient-color)
+    ),
+    url(../images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
