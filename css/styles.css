@@ -110,6 +110,10 @@ address {
   margin-left: auto;
 }
 
+.header-contacts > .header-item:first-child {
+  margin-right: 30px;
+}
+
 .header-text-color {
   color: var(--second-text-color);
 }
@@ -123,15 +127,22 @@ address {
 .header-link {
   font-weight: 500;
   line-height: 1.14;
-  display: block;
+  display: flex;
+  align-items: center;
   letter-spacing: 0.02em;
   padding-top: 32px;
   padding-bottom: 32px;
 }
+
 .header-link:hover,
 .header-link:focus,
 .current {
   color: var(--accent-color);
+}
+
+.header-item-icon {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 /* ----- Hero ------ */
@@ -194,6 +205,20 @@ address {
 
 .features {
   padding-bottom: 0;
+}
+
+.features-item-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  background-color: var(--second-background-color);
+  border-radius: 4px;
+}
+
+.features-item-icon {
+  border: 2px dashed red;
 }
 
 .features-item {
