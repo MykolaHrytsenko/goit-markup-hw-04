@@ -311,6 +311,30 @@ address {
   fill: currentColor;
 }
 
+/* ----- Regular Customers ------ */
+
+.customer-link {
+  width: 170px;
+  height: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--icon-fill-color);
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: var(--icon-fill-color);
+}
+
+.customer-link:hover,
+.customer-link:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.customer-logo {
+  fill: currentColor;
+}
+
 /* ----- Footer ----- */
 
 .footer {
