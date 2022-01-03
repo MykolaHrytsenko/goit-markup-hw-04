@@ -350,6 +350,11 @@ address {
   color: var(--btn-text-color);
 }
 
+.footer-box {
+  display: flex;
+  align-items: baseline;
+}
+
 .footer-logo {
   display: inline-block;
   margin-bottom: 20px;
@@ -379,6 +384,10 @@ address {
   margin-bottom: 20px;
 
   color: var(--btn-text-color);
+}
+
+.footer-social {
+  margin-left: 70px;
 }
 
 .footer-social-link {
