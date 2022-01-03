@@ -320,7 +320,6 @@ address {
   justify-content: center;
   align-items: center;
   border: 1px solid var(--icon-fill-color);
-  box-sizing: border-box;
   border-radius: 4px;
   color: var(--icon-fill-color);
 }
