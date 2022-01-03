@@ -214,12 +214,9 @@ address {
   align-items: center;
   width: 270px;
   height: 120px;
-  background-color: transparent;
+  background-color: var(--second-background-color);
   border-radius: 4px;
-}
-
-.features-item-icon {
-  border: 2px dashed red;
+  margin-bottom: 30px;
 }
 
 .features-item {
