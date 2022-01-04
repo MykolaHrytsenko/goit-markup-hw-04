@@ -75,6 +75,32 @@ address {
   margin-top: 30px;
 }
 
+/* ----- Social-list/item/link/icon -----*/
+
+.social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-link {
+  width: 44px;
+  height: 44px;
+  background-color: var(--btn-text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: var(--icon-fill-color);
+}
+
+.social-icon {
+  fill: currentColor;
+}
+
 /* ----- Header -----*/
 
 .header {
@@ -150,10 +176,6 @@ address {
 
 .hero {
   background-color: var(--first-background-color);
-  max-width: 1600px;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
   background-image: linear-gradient(
       var(--hero-gradient-color),
       var(--hero-gradient-color)
@@ -161,7 +183,7 @@ address {
     url(../images/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: cover, auto;
 
   text-align: center;
   padding-top: 200px;
@@ -194,6 +216,7 @@ address {
   letter-spacing: 0.06em;
   color: var(--btn-text-color);
   padding: 10px 32px;
+  border: none;
 }
 
 .hero-btn:focus,
@@ -212,7 +235,6 @@ address {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 270px;
   height: 120px;
   background-color: var(--second-background-color);
   border-radius: 4px;
@@ -279,36 +301,10 @@ address {
   margin-bottom: 16px;
 }
 
-.footer-social-list,
-.team-social-list {
-  display: flex;
-  justify-content: center;
-}
-
-.team-social-item + .team-social-item {
-  margin-left: 10px;
-}
-
-.footer-social-link,
-.team-social-link {
-  width: 44px;
-  height: 44px;
-  background-color: var(--btn-text-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  color: var(--icon-fill-color);
-}
-
-.team-social-link:hover,
-.team-social-link:focus {
+.team .social-link:hover,
+.team .social-link:focus {
   background-color: var(--accent-color);
   color: var(--btn-text-color);
-}
-
-.team-social-icon {
-  fill: currentColor;
 }
 
 /* ----- Regular Customers ------ */
@@ -351,13 +347,14 @@ address {
   align-items: baseline;
 }
 
-.footer-logo {
+.footer .logo {
   display: inline-block;
   margin-bottom: 20px;
 }
 
 .footer-item:not(:last-child) {
   margin-bottom: 9px;
+  margin-right: 70px;
 }
 
 .footer-link[target="_blank"] {
@@ -382,24 +379,16 @@ address {
   color: var(--btn-text-color);
 }
 
-.footer-social {
-  margin-left: 70px;
-}
-
-.footer-social-link {
+.footer .social-link {
   background-color: var(--footer-social-bg-color);
 }
 
-.footer-social-link:hover,
-.footer-social-link:focus {
+.footer .social-link:hover,
+.footer .social-link:focus {
   background-color: var(--accent-color);
 }
 
-.footer-social-item + .footer-social-item {
-  margin-left: 10px;
-}
-
-.footer-link-icon {
+.footer .social-icon {
   fill: var(--btn-text-color);
 }
 
@@ -451,8 +440,16 @@ address {
   flex-basis: calc(100% / 3 - 30px);
 }
 
-.projects-link-item:hover,
-.projects-link-item:focus {
+/* .projects-link-list .link:hover,
+.projects-link-list .link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  color: teal;
+  border: tomato;
+} */
+
+.projects-link:hover,
+.projects-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
